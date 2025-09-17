@@ -3,11 +3,15 @@ package ru.сourses.main;
 import ru.courses.lines.*;
 
 public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException {
-        Point point1 = new Point(6, 8);
-        Point point2 = new Point(6,7);
-        System.out.println("point1 == point2: " + point1.equals(point2));
-        Point point3 = point1.clone();
-        System.out.println("point1 == point3: " + point1.equals(point3));
+    public static void main(String[] args) {
+        PolyLine polyLine1 = new PolyLine(new Point(1, 2), new Point(4, 5), new Point(1, 5));
+        PolyLine polyLine2 = new PolyLine(new Point(1, 2), new Point(4, 5), new Point(1, 5));
+        PolyLine polyLine3 = new PolyLine(new Point(2, 2), new Point(2, 5), new Point(4, 5));
+        System.out.println("polyLine1: " + polyLine1);
+        System.out.println("polyLine2: " + polyLine2);
+        System.out.println("polyLine3: " + polyLine3);
+        System.out.println("polyLine1 == polyLine2: " + polyLine1.equals(polyLine2));
+        System.out.println("polyLine1 == polyLine3: " + polyLine1.equals(polyLine3));
+        System.out.println("polyLine2 == polyLine3: " + polyLine2.equals(polyLine3));
     }
 }
