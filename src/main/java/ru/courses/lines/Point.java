@@ -1,4 +1,4 @@
-package ru.courses.geometry;
+package ru.courses.lines;
 
 import java.util.Objects;
 
@@ -20,7 +20,7 @@ public class Point implements Cloneable {
 
     @Override
     public String toString() {
-        return "ru.courses.geometry.Point[" +
+        return "ru.courses.lines.Point[" +
                 "x=" + x +
                 ",y=" + y +
                 ']';
@@ -43,5 +43,4 @@ public class Point implements Cloneable {
     public Point clone() throws CloneNotSupportedException {
         return (Point) super.clone();
     }
-
 }

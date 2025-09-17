@@ -1,6 +1,6 @@
 package ru.сourses.main;
 
-import ru.courses.geometry.*;
+import ru.courses.lines.*;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
